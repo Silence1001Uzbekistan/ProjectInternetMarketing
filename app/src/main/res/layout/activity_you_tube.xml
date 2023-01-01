@@ -22,6 +22,61 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/buttonConst"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintBottom_toTopOf="@id/bottomNavigationView"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+
+                    <Button
+                        android:id="@+id/youOne"
+                        android:layout_width="300dp"
+                        android:layout_height="60dp"
+                        android:layout_margin="20sp"
+                        android:background="@drawable/youbuttonback" />
+
+                    <Button
+                        android:id="@+id/youTwo"
+                        android:layout_width="300dp"
+                        android:layout_height="60dp"
+                        android:layout_margin="20sp"
+                        android:background="@drawable/youbuttonback" />
+
+                    <Button
+                        android:id="@+id/youThree"
+                        android:layout_width="300dp"
+                        android:layout_height="60dp"
+                        android:layout_margin="20sp"
+                        android:background="@drawable/youbuttonback" />
+
+                    <Button
+                        android:id="@+id/youFour"
+                        android:layout_width="300dp"
+                        android:layout_height="60dp"
+                        android:layout_margin="20sp"
+                        android:background="@drawable/youbuttonback" />
+
+                    <Button
+                        android:id="@+id/youFive"
+                        android:layout_width="300dp"
+                        android:layout_height="60dp"
+                        android:layout_margin="20sp"
+                        android:background="@drawable/youbuttonback" />
+
+                </LinearLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
             <com.google.android.material.bottomnavigation.BottomNavigationView
                 android:id="@+id/bottomNavigationView"
                 android:layout_width="match_parent"
@@ -31,7 +86,6 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:menu="@menu/bottom_menu" />
-
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>
