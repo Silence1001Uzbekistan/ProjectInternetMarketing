@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/homeIdMenu"
+        android:icon="@drawable/ic_home"
+        android:title="Asosiy" />
+
+    <item
+        android:id="@+id/youtubeIdMenu"
+        android:icon="@drawable/ic_video"
+        android:title="YouTube" />
+
+    <item
+        android:id="@+id/questionIdMenu"
+        android:icon="@drawable/ic_question"
+        android:title="Question" />
+
+</menu>
