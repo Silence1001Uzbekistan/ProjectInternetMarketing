@@ -7,6 +7,7 @@ import android.view.Menu
 import android.view.MenuInflater
 import android.view.MenuItem
 import android.widget.Toast
+import androidx.appcompat.app.ActionBar
 import com.example.internetmarketing.databinding.ActivityHomeBinding
 import com.example.internetmarketing.databinding.ActivityMainBinding.inflate
 
@@ -19,7 +20,12 @@ class HomeActivity : AppCompatActivity() {
         binding = ActivityHomeBinding.inflate(layoutInflater, null, false)
         setContentView(binding.root)
 
-        Toast.makeText(this, "Home", Toast.LENGTH_SHORT).show()
+        supportActionBar!!.displayOptions = ActionBar.DISPLAY_SHOW_CUSTOM
+
+        supportActionBar!!.setCustomView(R.layout.toolbar_title_layout)
+
+        supportActionBar!!.elevation = 0F
+
 
         binding.bottomNavigationView.selectedItemId = R.id.homeIdMenu
 

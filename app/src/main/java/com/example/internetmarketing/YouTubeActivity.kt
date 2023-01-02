@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
 import android.widget.Toast
+import androidx.appcompat.app.ActionBar
 import com.example.internetmarketing.databinding.ActivityHomeBinding
 import com.example.internetmarketing.databinding.ActivityYouTubeBinding
 
@@ -18,7 +19,11 @@ class YouTubeActivity : AppCompatActivity() {
         binding = ActivityYouTubeBinding.inflate(layoutInflater, null, false)
         setContentView(binding.root)
 
-        Toast.makeText(this, "YouTube", Toast.LENGTH_SHORT).show()
+        supportActionBar!!.displayOptions = ActionBar.DISPLAY_SHOW_CUSTOM
+
+        supportActionBar!!.setCustomView(R.layout.toolbar_title_layout)
+
+        supportActionBar!!.elevation = 0F
 
         binding.bottomNavigationView.selectedItemId = R.id.youtubeIdMenu
 
@@ -57,6 +62,57 @@ class YouTubeActivity : AppCompatActivity() {
 
 
             false
+        }
+
+        binding.youOne.setOnClickListener {
+
+            val intent = Intent(this, VideoOneActivity::class.java)
+
+            intent.putExtra("video","one")
+
+            startActivity(intent)
+
+        }
+
+
+        binding.youTwo.setOnClickListener {
+
+            val intent = Intent(this, VideoOneActivity::class.java)
+
+            intent.putExtra("video","two")
+
+            startActivity(intent)
+
+        }
+
+        binding.youThree.setOnClickListener {
+
+            val intent = Intent(this, VideoOneActivity::class.java)
+
+            intent.putExtra("video","three")
+
+            startActivity(intent)
+
+        }
+
+        binding.youFour.setOnClickListener {
+
+            val intent = Intent(this, VideoOneActivity::class.java)
+
+            intent.putExtra("video","four")
+
+            startActivity(intent)
+
+        }
+
+        binding.youFive.setOnClickListener {
+
+            val intent = Intent(this, VideoOneActivity::class.java)
+
+            intent.putExtra("video","five")
+
+            startActivity(intent)
+
         }
 
     }

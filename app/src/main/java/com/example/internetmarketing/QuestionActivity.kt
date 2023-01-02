@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
 import android.widget.Toast
+import androidx.appcompat.app.ActionBar
 import com.example.internetmarketing.databinding.ActivityQuestionBinding
 import com.example.internetmarketing.databinding.ActivityYouTubeBinding
 
@@ -18,7 +19,11 @@ class QuestionActivity : AppCompatActivity() {
         binding = ActivityQuestionBinding.inflate(layoutInflater, null, false)
         setContentView(binding.root)
 
-        Toast.makeText(this, "Question", Toast.LENGTH_SHORT).show()
+        supportActionBar!!.displayOptions = ActionBar.DISPLAY_SHOW_CUSTOM
+
+        supportActionBar!!.setCustomView(R.layout.toolbar_title_layout)
+
+        supportActionBar!!.elevation = 0F
 
         binding.bottomNavigationView.selectedItemId = R.id.questionIdMenu
 

@@ -6,13 +6,13 @@
         android:id="@+id/aboutAppMenu"
         android:icon="@drawable/ic_book"
         android:title="Asosiy"
-        />
+        app:showAsAction="always" />
 
     <item
         android:id="@+id/usedLiteratureMenu"
         android:icon="@drawable/ic_about"
-        android:title="Kalkulayator" />
-
+        android:title="Kalkulayator"
+        app:showAsAction="always" />
 
 
 </menu>

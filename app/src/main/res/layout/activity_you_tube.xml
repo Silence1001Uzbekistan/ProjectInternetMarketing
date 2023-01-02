@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     tools:context=".YouTubeActivity">
 
     <RelativeLayout
@@ -41,6 +42,8 @@
                     <Button
                         android:id="@+id/youOne"
                         android:layout_width="300dp"
+                        android:text="Internet marketolog qanday ish bajaradi ?"
+                        android:textAllCaps="false"
                         android:layout_height="60dp"
                         android:layout_margin="20sp"
                         android:background="@drawable/youbuttonback" />
@@ -49,12 +52,16 @@
                         android:id="@+id/youTwo"
                         android:layout_width="300dp"
                         android:layout_height="60dp"
+                        android:text="Raqamli marketing nima ?"
+                        android:textAllCaps="false"
                         android:layout_margin="20sp"
                         android:background="@drawable/youbuttonback" />
 
                     <Button
                         android:id="@+id/youThree"
                         android:layout_width="300dp"
+                        android:text="Marketingni boshlamoqchiman ishn\nnimadan boshlay ?"
+                        android:textAllCaps="false"
                         android:layout_height="60dp"
                         android:layout_margin="20sp"
                         android:background="@drawable/youbuttonback" />
@@ -62,6 +69,8 @@
                     <Button
                         android:id="@+id/youFour"
                         android:layout_width="300dp"
+                        android:text="Marketingni 3 ta asosiy vazifasi "
+                        android:textAllCaps="false"
                         android:layout_height="60dp"
                         android:layout_margin="20sp"
                         android:background="@drawable/youbuttonback" />
@@ -70,6 +79,8 @@
                         android:id="@+id/youFive"
                         android:layout_width="300dp"
                         android:layout_height="60dp"
+                        android:text="Endi marketing qilmasa bo'lmaydi"
+                        android:textAllCaps="false"
                         android:layout_margin="20sp"
                         android:background="@drawable/youbuttonback" />
 
@@ -81,6 +92,8 @@
                 android:id="@+id/bottomNavigationView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                app:itemIconTint="#F9A825"
+                app:itemTextColor="#F9A825"
                 android:background="@color/white"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
