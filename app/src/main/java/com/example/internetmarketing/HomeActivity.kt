@@ -27,6 +27,24 @@ class HomeActivity : AppCompatActivity() {
         supportActionBar!!.elevation = 0F
 
 
+        binding.buttonOne.setOnClickListener {
+
+            startActivity(Intent(this, HomeOneActivity::class.java))
+
+        }
+
+        binding.buttonTwo.setOnClickListener {
+
+            startActivity(Intent(this, HomeTwoActivity::class.java))
+
+        }
+
+        binding.buttonThree.setOnClickListener {
+
+            startActivity(Intent(this, HomeThreeActivity::class.java))
+
+        }
+
         binding.bottomNavigationView.selectedItemId = R.id.homeIdMenu
 
 
