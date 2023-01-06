@@ -7,6 +7,7 @@ import android.view.Menu
 import android.view.MenuItem
 import android.widget.Toast
 import androidx.appcompat.app.ActionBar
+import com.example.internetmarketing.Papka.QuizActivity
 import com.example.internetmarketing.databinding.ActivityQuestionBinding
 import com.example.internetmarketing.databinding.ActivityYouTubeBinding
 
@@ -27,7 +28,16 @@ class QuestionActivity : AppCompatActivity() {
 
         binding.bottomNavigationView.selectedItemId = R.id.questionIdMenu
 
+
+        binding.nextBtn.setOnClickListener {
+
+            startActivity(Intent(this,QuizActivity::class.java))
+
+        }
+
         binding.bottomNavigationView.setOnItemSelectedListener {
+
+
 
             val id = it.itemId
 

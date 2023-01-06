@@ -9,4 +9,15 @@
     <color name="white">#FFFFFFFF</color>
 
     <color name="ActionBarTitleColor">#F9A825</color>
+
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="colorStatusBar">#54003F</color>
+
+    <color name="main_back">#E0EEFA</color>
+    <color name="rectangle_19_color">#4E74F9</color>
+    <color name="main_text_color">#132743</color>
+    <color name="main_quiz_color">#3F51B5</color>
+
 </resources>
