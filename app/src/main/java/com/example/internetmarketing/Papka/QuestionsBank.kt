@@ -9,57 +9,59 @@ object QuestionsBank {
 
         //Create object of QuestionsList class and pass a questions along with options and answer
         val question1 = QuestionsList(
-            "Python kim tomonidan yaratilgan?",
-            "Guido van Rossum ",
-            "Tim Breness-Lii",
-            "Rasmus Lerdof",
-            "Brendan Eyx",
-            "Guido van Rossum ",
+            "Marketing nima ?",
+            "bu alohida shaxslar va tashkilotlar maqsadlarini qoniqtiradigan ayirboshlash orqali fikrni rejalashtirish va amalga oshirish, narx belgilash, g‘oya, tovar va xizmatlarni targ‘ib etish va realizasiyasi jarayonidir",
+            "boshqa nomga ham ega – shaxs marketingi",
+            "bu inson obro‘-e'tibori, uning boshqa kishilar" +
+                    "ongidagi obrazidir. Personal brendlar ko‘pincha taniqli shaxslar" +
+                    "(sportchilar, siyosatchilar, artistlar va hk.) uchun yaratiladi",
+            "ommaviy ishlab chiqarish va uni bozorda iste'molchi uchun qulaylik",
+            "bu alohida shaxslar va tashkilotlar maqsadlarini qoniqtiradigan ayirboshlash orqali fikrni rejalashtirish va amalga oshirish, narx belgilash, g‘oya, tovar va xizmatlarni targ‘ib etish va realizasiyasi jarayonidir",
             ""
         )
         val question2 = QuestionsList(
-            "Python dasturlash tili nechanchi yil yaratilgan?",
-            "1992-yil",
-            "1991-yil",
-            "1990-yil",
-            "1993-yil",
-            "1991-yil",
+            "Nechanchi yilda Amazon kompaniyasi o‘zining internet-magazinini ochdi ?",
+            "1992-yilda",
+            "1995 yilda",
+            "1990-yilda",
+            "1993-yilda",
+            "1995 yilda",
             ""
         )
         val question3 = QuestionsList(
-            "Python qasyi sohalarda ishlatiladi?",
-            "Web dasturlash (serverlar bilan",
-            "Dasturiy ta’minot",
-            "Tizim skriptlari",
-            "Barcha javob to'g'ri",
-            "Barcha javob to'g'ri",
+            "Price nima ?",
+            "Mahsulot",
+            "Reklama",
+            "Unday so'z yo'q",
+            "Narx",
+            "Narx",
             ""
         )
         val question4 = QuestionsList(
-            "Izoh qoldirish qaysi belgi yordamida bajariladi?",
-            "//",
-            "*",
-            "#",
-            "$",
-            "#",
+            "Internetdagi biznesi nima ?",
+            "bu bir sutkada 24 soat, haftada 7 kun,ishlaydigan real vaqtdagi biznesdir",
+            "Ora orada ishlaydigan bisnes",
+            "Foyda orqali ishlaydigan biznes",
+            "Unday bisnez yo'q",
+            "bu bir sutkada 24 soat, haftada 7 kun,ishlaydigan real vaqtdagi biznesdir",
             ""
         )
         val question5 = QuestionsList(
-            "Pythonda o'zgaruvchilar tiplari e'lon qiinadimi?",
-            "Ha",
-            "Yo'q",
-            "Bilmayman",
-            "Mumkin",
-            "Yo'q",
+            "Nechanchi asrda Marketingning fan va biznes amaliyoti sifatidagi rivojlanishi boshlanadi",
+            "XX asrda",
+            "IV asrda",
+            "X asrda",
+            "VI asrda",
+            "XX asrda",
             ""
         )
         val question6 = QuestionsList(
-            "O'zaruvchi nomlari qanday yozilishi kerak?",
-            "O’zgaruvchi nomi raqam bilan boshlanishi kerak",
-            "	O’zgaruvchi nomlari katta-kichik harflarni farqlamaydi ",
-            "O’zgaruvchi nomi orasida bo’shliq (probel) bo’lishi kerak",
-            "	O’zgaruvchi nomi faqat harflar, raqamlar va tag chiziqdan iborat bo’lishi mumkin",
-            "O’zgaruvchi nomi faqat harflar, raqamlar va tag chiziqdan iborat bo’lishi mumkin",
+            "Nechanchi yilda First Virtual kompaniyasi tovarlarni internet-magazinda sotib olganda to‘lov qiladigan birinchi to‘lov tizimiga aylandi",
+            "1990-yil",
+            "1987-yil",
+            "1993-yil",
+            "1994-yil",
+            "1994-yil",
             ""
         )
 

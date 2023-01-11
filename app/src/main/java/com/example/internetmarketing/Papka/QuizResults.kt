@@ -6,7 +6,6 @@ import androidx.appcompat.widget.AppCompatButton
 import android.widget.TextView
 import android.content.Intent
 import android.view.WindowManager
-import androidx.core.content.ContextCompat
 import com.example.internetmarketing.HomeActivity
 import com.example.internetmarketing.R
 
