@@ -2,15 +2,10 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <item
-        android:id="@+id/aboutAppMenu"
-        android:icon="@drawable/ic_book"
-        android:title="Asosiy"
-        app:showAsAction="always" />
 
     <item
         android:id="@+id/usedLiteratureMenu"
-        android:icon="@drawable/ic_about"
+        android:icon="@drawable/ic_baseline_power_settings_new_24"
         android:title="Kalkulayator"
         app:showAsAction="always" />
 

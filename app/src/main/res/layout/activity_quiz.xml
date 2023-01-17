@@ -55,101 +55,123 @@
         </LinearLayout>
     </RelativeLayout>
 
-    <TextView
-        android:id="@+id/questions"
-        android:layout_width="wrap_content"
-        android:layout_height="30dp"
-        android:layout_gravity="center"
-        android:layout_marginTop="40dp"
-        android:background="@drawable/round_back_white10"
-        android:elevation="1dp"
-        android:gravity="center"
-        android:paddingStart="15dp"
-        android:paddingEnd="15dp"
-        android:text="1/10"
-        android:textStyle="bold"
-        android:textColor="#1F6BB8" />
-
-    <TextView
-        android:id="@+id/question"
+    <LinearLayout
+        android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="-20dp"
-        android:layout_marginEnd="20dp"
-        android:background="@drawable/round_back_black10"
-        android:gravity="center"
-        android:minHeight="100dp"
-        android:padding="20dp"
-        android:textStyle="bold"
-        android:text="Question will come here..."
-        android:textColor="#000000"
-        android:textSize="24sp" />
+        android:layout_height="match_parent">
 
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/option1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="40dp"
-        android:layout_marginEnd="20dp"
-        android:background="@drawable/round_back_white_stroke2_10"
-        android:text="Option 1"
-        android:textSize="16sp"
-        android:textAllCaps="false"
-        android:textColor="#1F6BB8" />
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/option2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="12dp"
-        android:layout_marginEnd="20dp"
-        android:background="@drawable/round_back_white_stroke2_10"
-        android:text="Option 2"
-        android:textAllCaps="false"
-        android:textSize="16sp"
-        android:textColor="#1F6BB8" />
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/option3"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="12dp"
-        android:layout_marginEnd="20dp"
-        android:background="@drawable/round_back_white_stroke2_10"
-        android:text="Option 3"
-        android:textAllCaps="false"
-        android:textSize="16sp"
-        android:textColor="#1F6BB8" />
+            <TextView
+                android:id="@+id/questions"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/round_back_white10"
+                android:elevation="1dp"
+                android:gravity="center"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:text="1/10"
+                android:textStyle="bold"
+                android:textColor="#1F6BB8" />
 
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/option4"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="12dp"
-        android:layout_marginEnd="20dp"
-        android:background="@drawable/round_back_white_stroke2_10"
-        android:text="Option 4"
-        android:textAllCaps="false"
-        android:textSize="16sp"
-        android:textColor="#1F6BB8" />
+            <TextView
+                android:id="@+id/question"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="-20dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/round_back_black10"
+                android:gravity="center"
+                android:minHeight="100dp"
+                android:padding="20dp"
+                android:textStyle="bold"
+                android:text="Question will come here..."
+                android:textColor="#000000"
+                android:textSize="24sp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/option1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/round_back_white_stroke2_10"
+                android:text="Option 1"
+                android:textSize="16sp"
+                android:textAllCaps="false"
+                android:textColor="#1F6BB8" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/option2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/round_back_white_stroke2_10"
+                android:text="Option 2"
+                android:textAllCaps="false"
+                android:textSize="16sp"
+                android:textColor="#1F6BB8" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/option3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/round_back_white_stroke2_10"
+                android:text="Option 3"
+                android:textAllCaps="false"
+                android:textSize="16sp"
+                android:textColor="#1F6BB8" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/option4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/round_back_white_stroke2_10"
+                android:text="Option 4"
+                android:textAllCaps="false"
+                android:textSize="16sp"
+                android:textColor="#1F6BB8" />
 
 
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/nextBtn"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="70dp"
-        android:layout_marginEnd="20dp"
-        android:background="@drawable/round_back_green20"
-        android:text="Keyingisi"
-        android:textAllCaps="false"
-        android:textColor="#FFFFFF"
-        android:textStyle="bold"
-        android:textSize="18sp" />
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/nextBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/round_back_green20"
+                android:text="Keyingisi"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:textSize="18sp" />
+
+
+        </LinearLayout>
+
+        </ScrollView>
+
+
+    </LinearLayout>
 </LinearLayout>

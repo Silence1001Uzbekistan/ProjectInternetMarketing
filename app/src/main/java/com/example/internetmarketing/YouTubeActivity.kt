@@ -1,5 +1,7 @@
 package com.example.internetmarketing
 
+import android.app.AlertDialog
+import android.content.DialogInterface
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -9,10 +11,13 @@ import android.widget.Toast
 import androidx.appcompat.app.ActionBar
 import com.example.internetmarketing.databinding.ActivityHomeBinding
 import com.example.internetmarketing.databinding.ActivityYouTubeBinding
+import kotlin.system.exitProcess
 
 class YouTubeActivity : AppCompatActivity() {
 
     lateinit var binding: ActivityYouTubeBinding
+
+    private var backPressedTime = 0L
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -39,6 +44,7 @@ class YouTubeActivity : AppCompatActivity() {
                     startActivity(Intent(applicationContext, HomeActivity::class.java))
                     overridePendingTransition(0, 0)
                     true
+                    finish()
 
 
                 }
@@ -55,6 +61,7 @@ class YouTubeActivity : AppCompatActivity() {
                     startActivity(Intent(applicationContext, QuestionActivity::class.java))
                     overridePendingTransition(0, 0)
                     true
+                    finish()
 
                 }
 
@@ -133,15 +140,29 @@ class YouTubeActivity : AppCompatActivity() {
         val id = item.itemId
 
         when (id) {
-            R.id.aboutAppMenu -> {
-
-                Toast.makeText(this, "A", Toast.LENGTH_SHORT).show()
-
-            }
 
             R.id.usedLiteratureMenu -> {
 
-                Toast.makeText(this, "B", Toast.LENGTH_SHORT).show()
+                val builder = AlertDialog.Builder(this)
+
+                builder.setTitle("Dasturni yopish")
+                builder.setMessage("Dasturdan chiqishni xohlaysizmi ?")
+                builder.setCancelable(false)
+                builder.setPositiveButton("Ha",object : DialogInterface.OnClickListener{
+                    override fun onClick(p0: DialogInterface?, p1: Int) {
+                        finish()
+                        exitProcess(0)
+                    }
+                })
+                builder.setNegativeButton("Yo'q",object : DialogInterface.OnClickListener{
+                    override fun onClick(p0: DialogInterface?, p1: Int) {
+
+
+                    }
+
+                })
+
+                builder.show()
 
             }
 
@@ -150,4 +171,19 @@ class YouTubeActivity : AppCompatActivity() {
         return super.onOptionsItemSelected(item)
 
     }
+
+    override fun onBackPressed() {
+
+        if (backPressedTime + 2000 > System.currentTimeMillis()) {
+            finish()
+            super.onBackPressed()
+        } else {
+            Toast.makeText(this, "Dasturdan chiqish uchun ketma ket tez bosing", Toast.LENGTH_SHORT)
+                .show()
+        }
+
+        backPressedTime = System.currentTimeMillis()
+
+    }
+
 }

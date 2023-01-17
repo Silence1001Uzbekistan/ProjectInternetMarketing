@@ -11,13 +11,13 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <com.airbnb.lottie.LottieAnimationView
+<!--        <com.airbnb.lottie.LottieAnimationView
             android:id="@+id/lavOne"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             app:lottie_autoPlay="true"
             app:lottie_loop="true"
-            app:lottie_rawRes="@raw/home" />
+            app:lottie_rawRes="@raw/home" />-->
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
@@ -33,51 +33,51 @@
                 app:layout_constraintRight_toRightOf="parent"
                 app:layout_constraintTop_toTopOf="parent">
 
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
 
-                <com.google.android.material.floatingactionbutton.FloatingActionButton
-                    android:id="@+id/buttonOne"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="5dp"
-                    app:layout_constraintVertical_bias="0.05"
-                    app:layout_constraintHorizontal_bias="0.2"
-                    android:backgroundTint="#FFFFFF"
-                    android:src="@drawable/oneicon"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintLeft_toLeftOf="parent"
-                    app:layout_constraintRight_toRightOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    tools:ignore="MissingConstraints" />
 
-                <com.google.android.material.floatingactionbutton.FloatingActionButton
-                    android:id="@+id/buttonTwo"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="5dp"
-                    android:backgroundTint="#FFFFFF"
-                    app:layout_constraintVertical_bias="0.2"
-                    app:layout_constraintHorizontal_bias="0.8"
-                    android:src="@drawable/numbertwo"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintLeft_toLeftOf="parent"
-                    app:layout_constraintRight_toRightOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    tools:ignore="MissingConstraints" />
+                    <Button
+                        android:id="@+id/buttonOne"
+                        android:layout_width="300dp"
+                        android:text="Marketing tarixi "
+                        android:textAllCaps="false"
+                        android:layout_height="60dp"
+                        android:layout_margin="20sp"
+                        android:background="@drawable/homebuttonback" />
 
-                <com.google.android.material.floatingactionbutton.FloatingActionButton
-                    android:id="@+id/buttonThree"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="5dp"
-                    app:layout_constraintVertical_bias="0.4"
-                    app:layout_constraintHorizontal_bias="0.45"
-                    android:backgroundTint="#FFFFFF"
-                    android:src="@drawable/numberthree"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintLeft_toLeftOf="parent"
-                    app:layout_constraintRight_toRightOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    tools:ignore="MissingConstraints" />
+                    <Button
+                        android:id="@+id/buttonTwo"
+                        android:layout_width="300dp"
+                        android:layout_height="60dp"
+                        android:text="Internet marketing nima ?"
+                        android:textAllCaps="false"
+                        android:layout_margin="20sp"
+                        android:background="@drawable/homebuttonback" />
+
+                    <Button
+                        android:id="@+id/buttonThree"
+                        android:layout_width="300dp"
+                        android:text="Internet marketing afzaliklari"
+                        android:textAllCaps="false"
+                        android:layout_height="60dp"
+                        android:layout_margin="20sp"
+                        android:background="@drawable/homebuttonback" />
+
+                    <Button
+                        android:id="@+id/buttonFour"
+                        android:layout_width="300dp"
+                        android:text="Ijtimoiy tarmoqlardagi marketing..."
+                        android:textAllCaps="false"
+                        android:layout_height="60dp"
+                        android:layout_margin="20sp"
+                        android:background="@drawable/homebuttonback" />
+
+                </LinearLayout>
+
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 

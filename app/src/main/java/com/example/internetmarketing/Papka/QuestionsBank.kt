@@ -65,6 +65,193 @@ object QuestionsBank {
             ""
         )
 
+        val question7 = QuestionsList(
+            "Nechanchi yillar o‘rtasida Google kompaniyasi AdWords kontekstli reklamasi \n" +
+                    "xizmatini ishga tushurdi, va shu yildan e'tiboran Yahoo va Google \n" +
+                    "bozorda kontekstli reklamani asosiy ishlab chiqaruvchilari bo‘ldi",
+            "2000-yil",
+            "1900-yil",
+            "2020-yil",
+            "1994-yil",
+            "2000-yil",
+            ""
+        )
+
+        val question8 = QuestionsList(
+            " – bu foydalanuvchilarga ularning qidiruv \n" +
+                    "talabnomalari, qiziqishlari yoki internetdagi xulq-atvoriga muvofiq \n" +
+                    "ravishda ko‘rsatiladigan turli e'lonlar",
+            "Kontekstli reklama",
+            "obot reklama",
+            "Several reklama",
+            "Yeye reklama",
+            "Kontekstli reklama",
+            ""
+        )
+
+        val question9 = QuestionsList(
+            "Qaysi reklama eng mashhur reklama bo‘lib \n" +
+                    "hisoblanadi. ",
+            "Several reklama",
+            "obot rekalam",
+            "Koteksli reklama",
+            "Qidiruv kontekstli ",
+            "Qidiruv kontekstli ",
+            ""
+        )
+
+        val question10 = QuestionsList(
+            "Targeting nima ?",
+            " (Google, Yandex) da berilgan \n" +
+                    "kalit so‘zlarga mos joylashtirish joylarini avtomatik tanlash uchun \n" +
+                    "qo‘llaniladi. Targetingning ushbu turi reklamaning maksimal \n" +
+                    "samaradorligi va konversiya arzonligi qiziqtiradigan reklama \n" +
+                    "beruvchilarga to‘g‘ri keladi, chunki e'lonlar sizning xabaringizga \n" +
+                    "relevant bo‘lgan resurslarda ko‘rsatiladi",
+            "butun auditoriya ichidan qidiruvning berilgan \n" +
+                    "mezonlariga javob beradigan qismini ajratib olishga va reklamani aynan \n" +
+                    "unga ko‘rsatishga imkon beradigan reklama mexanizmidir",
+            " bu tashrif buyuruvchilar sonining maqsadli harakatni, \n" +
+                    "ya'ni internet-resurs sohibiga foyda keltiradigan harakatni amalga \n" +
+                    "oshirgan foydalanuvchilar soniga nisbatidir.",
+            " bu qidiruv talabnomasining foydalanuvchi kutgan \n" +
+                    "natijasiga muvofiqligi darajasi",
+            "butun auditoriya ichidan qidiruvning berilgan \n" +
+                    "mezonlariga javob beradigan qismini ajratib olishga va reklamani aynan \n" +
+                    "unga ko‘rsatishga imkon beradigan reklama mexanizmidir",
+            ""
+        )
+
+        val question11 = QuestionsList(
+            " - Google AdWords mutaxassislari tomonidan ishlab \n" +
+                    "chiqilgan Internet-marketing vositasidir. Remarketing texnologiyasi \n" +
+                    "reklama beruvchilar saytlarida foydalanuvining hulq-atvoriga \n" +
+                    "yo‘naltirilgan bo‘lib, u ko‘rgan, savatchaga qo‘shgan tovar va xizmatlar \n" +
+                    "reklamasini ko‘rsatadi.\n",
+            "Remarketing",
+            "Relevantlilik",
+            "Konversiya",
+            "Targeting",
+            "Remarketing",
+            ""
+        )
+
+        val question12 = QuestionsList(
+            " - bu reklama xarakterdagi grafik blokdir. U matn, video, \n" +
+                    "statik va animasiyali tasvirlardan iborat bo‘lishi mumkin.\n",
+            "Konversiya",
+            "Grafik",
+            "Banner",
+            "Google kontekstli",
+            "Banner",
+            ""
+        )
+
+        val question13 = QuestionsList(
+            " - reklama kampaniyasini olib borish texnikasi \n" +
+                    "bo‘lib, bunda kompaniyaning tovar yoki xizmatlari to‘g‘risidagi \n" +
+                    "ma'lumotni asosiy tarqatuvchisi maqsadli auditoriya vakillarining o‘zi \n" +
+                    "bo‘ladi. Bu turdagi yondashuvda an'anaviy tovar afzalliklarining ta'rifi \n" +
+                    "va uni xarid qilishga da'vat yo‘q bo‘lib, hattoki tovarga to‘g‘ri ishora \n" +
+                    "ham har doim bo‘lmaydi.\n",
+            "Virussiz marketing",
+            "Anti marketing",
+            "Virusli marketing",
+            "Koko marketing",
+            "Virusli marketing",
+            ""
+        )
+
+        val question14 = QuestionsList(
+            " - foydalanuvchilarga ma'lum harakatlari \n" +
+                    "evaziga bonus va'da qiladi. Maqsad bu holatda tovar yoki xizmatni \n" +
+                    "oddiy targ‘ib etish emas, balki maqsadli auditoriya bilan uzoq muddatli \n" +
+                    "va unumdor aloqalar uchun asos yaratishdir. ",
+            "Centivised viral (undov)",
+            "Incent viral (undov)",
+            "V viral (undov)",
+            "Incentivised viral (undov)",
+            "Incentivised viral (undov)",
+            ""
+        )
+
+        val question15 = QuestionsList(
+            " -  xavfli usul bo‘lib, u har vaqt ham to‘g‘ri \n" +
+                    "bo‘lmaydi, ba'zan brendga zarar keltirishi ham mumkin. Maqsad – har \n" +
+                    "qanday yo‘l bilan auditoriya e'tiborini jalb qilish.",
+            "Buzz (mish-mishlar) ",
+            "Incentivised viral (undov)",
+            "Virus",
+            "Internet",
+            "Buzz (mish-mishlar) ",
+            ""
+        )
+
+        val question16 = QuestionsList(
+            "Ijtimoiy marketingni tashkil qilish nechta bosqichdan iborat",
+            "4 ta",
+            "10 ta",
+            "8 ta",
+            "3 ta",
+            "10 ta",
+            ""
+        )
+
+        val question17 = QuestionsList(
+            "Ijtimoiy tarmoqlardagi marketing (SMM) atamasi o‘tgan asrning \n" +
+                    "nechanchi yillarida ishlatila boshlandi.",
+            "10",
+            "50",
+            "70",
+            "90",
+            "70",
+            ""
+        )
+
+        val question18 = QuestionsList(
+            "... -  Ushbu resurslar joylashgan hududda iqtisodiyotni \n" +
+                    "yaxshilash maqsadida resurslarni birlashtirishga qaratilgan chora\u0002tadbirlar.\n",
+            "Fandrayzing",
+            "Marketing",
+            "Xayriya ishlari.",
+            "Homiylik",
+            "Fandrayzing",
+            ""
+        )
+
+        val question19 = QuestionsList(
+            "  - Mashhur bo‘lgan ijtimoiy marketingning turlaridan biri. \n" +
+                    "U ba'zi guruh insonlarga yordam ko‘rsatishdan iborat. Kam \n" +
+                    "ta'minlangan oilalarni qo‘llab-quvvatlash, sport musobaqalarini \n" +
+                    "tashkil qilish va hk.lar bunga misol bo‘ladi.\n",
+            "Fandrayzing",
+            "Marketing",
+            "Xayriya ishlari.",
+            "Homiylik",
+            "Homiylik",
+            ""
+        )
+
+        val question20 = QuestionsList(
+            "SMM maqsadi ?",
+            "xizmat ko‘rsatish yoki tovar sotishlarni \n" +
+                    "jamiyat uchun foydali loyihalar bilan birlashtirish hisobiga potensial \n" +
+                    "mijozlar sodiqligini oshirishdir",
+            "  - Mashhur bo‘lgan ijtimoiy marketingning turlaridan biri. \\n\" +\n" +
+                    "                    \"U ba'zi guruh insonlarga yordam ko‘rsatishdan iborat. Kam \\n\" +\n" +
+                    "                    \"ta'minlangan oilalarni qo‘llab-quvvatlash, sport musobaqalarini \\n\" +\n" +
+                    "                    \"tashkil qilish va hk.lar bunga misol bo‘ladi.\\n",
+            "Bunga mijozlarda xayriya ishlariga yoki jamiyat \n" +
+                    "uchun foydali bo‘lgan tadbirlarga aloqadorlik hissini \n" +
+                    "shakllantiradigan aksiyalar kiradi",
+            "Ushbu resurslar joylashgan hududda iqtisodiyotni \n" +
+                    "yaxshilash maqsadida resurslarni birlashtirishga qaratilgan chora\u0002tadbirlar",
+            "xizmat ko‘rsatish yoki tovar sotishlarni \n" +
+                    "jamiyat uchun foydali loyihalar bilan birlashtirish hisobiga potensial \n" +
+                    "mijozlar sodiqligini oshirishdir",
+            ""
+        )
+
         //add all questions to List<QuestionsList>
         questionsLists.add(question1)
         questionsLists.add(question2)
@@ -72,6 +259,21 @@ object QuestionsBank {
         questionsLists.add(question4)
         questionsLists.add(question5)
         questionsLists.add(question6)
+        questionsLists.add(question7)
+        questionsLists.add(question8)
+        questionsLists.add(question9)
+        questionsLists.add(question10)
+        questionsLists.add(question11)
+        questionsLists.add(question12)
+        questionsLists.add(question13)
+        questionsLists.add(question14)
+        questionsLists.add(question15)
+        questionsLists.add(question16)
+        questionsLists.add(question17)
+        questionsLists.add(question18)
+        questionsLists.add(question19)
+        questionsLists.add(question20)
+        questionsLists.shuffle()
         return questionsLists
     }
 

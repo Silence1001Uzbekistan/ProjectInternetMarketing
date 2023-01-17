@@ -13,8 +13,8 @@
 
         <com.airbnb.lottie.LottieAnimationView
             android:id="@+id/lavOne"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
             app:lottie_autoPlay="true"
             app:lottie_loop="true"
             app:lottie_rawRes="@raw/youtube" />
