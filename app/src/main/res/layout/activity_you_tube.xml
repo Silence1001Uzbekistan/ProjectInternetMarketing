@@ -60,7 +60,7 @@
                     <Button
                         android:id="@+id/youThree"
                         android:layout_width="300dp"
-                        android:text="Marketingni boshlamoqchiman ishn\nnimadan boshlay ?"
+                        android:text="Marketingni boshlamoqchiman\nishni nimadan boshlay ?"
                         android:textAllCaps="false"
                         android:layout_height="60dp"
                         android:layout_margin="20sp"

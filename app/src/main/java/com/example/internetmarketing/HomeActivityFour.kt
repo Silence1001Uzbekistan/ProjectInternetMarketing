@@ -3,15 +3,16 @@ package com.example.internetmarketing
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.WindowManager
+import com.example.internetmarketing.databinding.ActivityHomeFourBinding
 import com.example.internetmarketing.databinding.ActivityHomeOneBinding
 
 class HomeActivityFour : AppCompatActivity() {
 
-    lateinit var binding: ActivityHomeOneBinding
+    lateinit var binding: ActivityHomeFourBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityHomeOneBinding.inflate(layoutInflater, null, false)
+        binding = ActivityHomeFourBinding.inflate(layoutInflater, null, false)
         setContentView(binding.root)
 
 

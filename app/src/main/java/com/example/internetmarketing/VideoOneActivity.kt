@@ -1,6 +1,8 @@
 package com.example.internetmarketing
 
+import android.content.Intent
 import android.content.pm.ActivityInfo
+import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.WindowManager
@@ -49,31 +51,66 @@ class VideoOneActivity : YouTubeBaseActivity() {
                 p2: Boolean
             ) {
 
-                if (id == "one"){
-                    val VIDEO_ID = "f0cdG0IVFM8"
-                    p1?.loadVideo(VIDEO_ID)
-                }
-                else{
+                if (id == "one") {
+/*                    val VIDEO_ID = "f0cdG0IVFM"
+                    p1?.loadVideo(VIDEO_ID)*/
 
-                    if (id == "two"){
-                        val VIDEO_ID = "MGjpCsn5SmE"
-                        p1?.loadVideo(VIDEO_ID)
-                    }else{
+                    val intent = Intent(Intent.ACTION_VIEW)
 
-                        if (id == "three"){
-                            val VIDEO_ID = "cwnrchkwW2g"
-                            p1?.loadVideo(VIDEO_ID)
-                        }else{
+                    intent.data = Uri.parse("https://youtu.be/f0cdG0IVFM8")
 
-                            if (id == "four"){
-                                val VIDEO_ID = "-6WbYaR70zk"
-                                p1?.loadVideo(VIDEO_ID)
-                            }else{
+                    startActivity(intent)
+
+                } else {
+
+                    if (id == "two") {
 
 
-                                if (id == "five"){
-                                    val VIDEO_ID = "e-TCK_Q7Z2M"
-                                    p1?.loadVideo(VIDEO_ID)
+                        val intent = Intent(Intent.ACTION_VIEW)
+
+                        intent.data = Uri.parse("https://youtu.be/MGjpCsn5SmE")
+
+                        startActivity(intent)
+
+/*                        val VIDEO_ID = "MGjpCsn5SmE"
+                        p1?.loadVideo(VIDEO_ID)*/
+                    } else {
+
+                        if (id == "three") {
+
+                            val intent = Intent(Intent.ACTION_VIEW)
+
+                            intent.data = Uri.parse("https://youtu.be/cwnrchkwW2g")
+
+                            startActivity(intent)
+
+/*                            val VIDEO_ID = "cwnrchkwW2g"
+                            p1?.loadVideo(VIDEO_ID)*/
+                        } else {
+
+                            if (id == "four") {
+
+                                val intent = Intent(Intent.ACTION_VIEW)
+
+                                intent.data = Uri.parse("https://youtu.be/-6WbYaR70zk")
+
+                                startActivity(intent)
+
+/*                                val VIDEO_ID = "-6WbYaR70zk"
+                                p1?.loadVideo(VIDEO_ID)*/
+                            } else {
+
+
+                                if (id == "five") {
+
+                                    val intent = Intent(Intent.ACTION_VIEW)
+
+                                    intent.data = Uri.parse("https://youtu.be/e-TCK_Q7Z2M")
+
+                                    startActivity(intent)
+
+/*                                    val VIDEO_ID = "e-TCK_Q7Z2M"
+                                    p1?.loadVideo(VIDEO_ID)*/
                                 }
 
                             }
@@ -93,6 +130,7 @@ class VideoOneActivity : YouTubeBaseActivity() {
 
                 Toast.makeText(this@VideoOneActivity, "Failed", Toast.LENGTH_SHORT).show()
 
+
             }
 
         }
@@ -105,7 +143,7 @@ class VideoOneActivity : YouTubeBaseActivity() {
 
         }*/
 
-        youTubePlayer.initialize(VIDEO_API_KEY,youtubePlayerInit)
+        youTubePlayer.initialize(VIDEO_API_KEY, youtubePlayerInit)
 
     }
 }
