@@ -43,6 +43,7 @@
                     <Button
                         android:id="@+id/buttonOne"
                         android:layout_width="300dp"
+                        android:textColor="#FFFFFF"
                         android:text="Marketing tarixi "
                         android:textAllCaps="false"
                         android:layout_height="60dp"
@@ -52,6 +53,7 @@
                     <Button
                         android:id="@+id/buttonTwo"
                         android:layout_width="300dp"
+                        android:textColor="#FFFFFF"
                         android:layout_height="60dp"
                         android:text="Internet marketing nima ?"
                         android:textAllCaps="false"
@@ -61,6 +63,7 @@
                     <Button
                         android:id="@+id/buttonThree"
                         android:layout_width="300dp"
+                        android:textColor="#FFFFFF"
                         android:text="Internet marketing afzaliklari"
                         android:textAllCaps="false"
                         android:layout_height="60dp"
@@ -70,6 +73,7 @@
                     <Button
                         android:id="@+id/buttonFour"
                         android:layout_width="300dp"
+                        android:textColor="#FFFFFF"
                         android:text="Ijtimoiy tarmoqlardagi marketing..."
                         android:textAllCaps="false"
                         android:layout_height="60dp"
@@ -85,9 +89,9 @@
                 android:id="@+id/bottomNavigationView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@color/white"
-                app:itemIconTint="#F9A825"
-                app:itemTextColor="#F9A825"
+                android:background="#F9A825"
+                app:itemIconTint="#FFFFFF"
+                app:itemTextColor="#FFFFFF"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"

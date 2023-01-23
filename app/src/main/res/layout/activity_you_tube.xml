@@ -11,14 +11,6 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <com.airbnb.lottie.LottieAnimationView
-            android:id="@+id/lavOne"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            app:lottie_autoPlay="true"
-            app:lottie_loop="true"
-            app:lottie_rawRes="@raw/youtube" />
-
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent">
@@ -38,51 +30,103 @@
                     android:gravity="center"
                     android:orientation="vertical">
 
+                    <ScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
 
-                    <Button
-                        android:id="@+id/youOne"
-                        android:layout_width="300dp"
-                        android:text="Internet marketolog qanday ish bajaradi ?"
-                        android:textAllCaps="false"
-                        android:layout_height="60dp"
-                        android:layout_margin="20sp"
-                        android:background="@drawable/youbuttonback" />
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:orientation="vertical">
 
-                    <Button
-                        android:id="@+id/youTwo"
-                        android:layout_width="300dp"
-                        android:layout_height="60dp"
-                        android:text="Raqamli marketing nima ?"
-                        android:textAllCaps="false"
-                        android:layout_margin="20sp"
-                        android:background="@drawable/youbuttonback" />
 
-                    <Button
-                        android:id="@+id/youThree"
-                        android:layout_width="300dp"
-                        android:text="Marketingni boshlamoqchiman\nishni nimadan boshlay ?"
-                        android:textAllCaps="false"
-                        android:layout_height="60dp"
-                        android:layout_margin="20sp"
-                        android:background="@drawable/youbuttonback" />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10sp"
+                                android:text="Internet marketing ilovamizda\nAvvalo Milliy ta'lim resurslari kanalidan\nDigital Marketing playlisti bilan tanishib olamiz "
+                                android:textSize="10sp"
+                                android:textColor="@color/colorPrimaryDark"/>
 
-                    <Button
-                        android:id="@+id/youFour"
-                        android:layout_width="300dp"
-                        android:text="Marketingni 3 ta asosiy vazifasi "
-                        android:textAllCaps="false"
-                        android:layout_height="60dp"
-                        android:layout_margin="20sp"
-                        android:background="@drawable/youbuttonback" />
+                            <Button
+                                android:id="@+id/youMain"
+                                android:layout_width="300dp"
+                                android:layout_height="60dp"
+                                android:layout_margin="12dp"
+                                android:padding="5dp"
+                                android:background="@drawable/youbuttonback"
+                                android:text="Kursni boshlash"
+                                android:textAllCaps="false"
+                                android:textColor="#FFFFFF" />
 
-                    <Button
-                        android:id="@+id/youFive"
-                        android:layout_width="300dp"
-                        android:layout_height="60dp"
-                        android:text="Endi marketing qilmasa bo'lmaydi"
-                        android:textAllCaps="false"
-                        android:layout_margin="20sp"
-                        android:background="@drawable/youbuttonback" />
+                            <Button
+                                android:id="@+id/youOne"
+                                android:layout_width="300dp"
+                                android:layout_height="60dp"
+                                android:layout_margin="12dp"
+                                android:padding="5dp"
+                                android:backgroundTint="#FB8C00"
+                                android:text="Internet marketolog qanday ish bajaradi ?"
+                                android:textAllCaps="false"
+                                android:textColor="#FFFFFF" />
+
+                            <Button
+                                android:id="@+id/youTwo"
+                                android:layout_width="300dp"
+                                android:layout_height="60dp"
+                                android:layout_margin="12dp"
+                                android:padding="5dp"
+                                android:backgroundTint="#FB8C00"
+                                android:text="Raqamli marketing nima ?"
+                                android:textAllCaps="false"
+                                android:textColor="#FFFFFF" />
+
+                            <Button
+                                android:id="@+id/youThree"
+                                android:layout_width="300dp"
+                                android:layout_height="60dp"
+                                android:layout_margin="12dp"
+                                android:padding="5dp"
+                                android:backgroundTint="#FB8C00"
+                                android:text="Marketingni boshlamoqchiman\nishni nimadan boshlay ?"
+                                android:textAllCaps="false"
+                                android:textColor="#FFFFFF" />
+
+                            <Button
+                                android:id="@+id/youFour"
+                                android:layout_width="300dp"
+                                android:layout_height="60dp"
+                                android:layout_margin="12dp"
+                                android:padding="5dp"
+                                android:backgroundTint="#FB8C00"
+                                android:text="Marketingni 3 ta asosiy vazifasi "
+                                android:textAllCaps="false"
+                                android:textColor="#FFFFFF" />
+
+                            <Button
+                                android:id="@+id/youFive"
+                                android:layout_width="300dp"
+                                android:padding="5dp"
+                                android:layout_height="60dp"
+                                android:layout_margin="12dp"
+                                android:backgroundTint="#FB8C00"
+                                android:text="Endi marketing qilmasa bo'lmaydi"
+                                android:textAllCaps="false"
+                                android:textColor="#FFFFFF" />
+
+
+                            <com.airbnb.lottie.LottieAnimationView
+                                android:id="@+id/lavOne"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                app:lottie_autoPlay="true"
+                                app:lottie_loop="true"
+                                app:lottie_rawRes="@raw/youtube" />
+
+                        </LinearLayout>
+
+                    </ScrollView>
 
                 </LinearLayout>
 
@@ -92,9 +136,9 @@
                 android:id="@+id/bottomNavigationView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                app:itemIconTint="#F9A825"
-                app:itemTextColor="#F9A825"
-                android:background="@color/white"
+                android:background="#F9A825"
+                app:itemIconTint="#FFFFFF"
+                app:itemTextColor="#FFFFFF"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"

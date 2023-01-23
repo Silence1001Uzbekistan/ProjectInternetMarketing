@@ -71,6 +71,16 @@ class YouTubeActivity : AppCompatActivity() {
             false
         }
 
+        binding.youMain.setOnClickListener {
+
+            val intent = Intent(this, VideoOneActivity::class.java)
+
+            intent.putExtra("video","main")
+
+            startActivity(intent)
+
+        }
+
         binding.youOne.setOnClickListener {
 
             val intent = Intent(this, VideoOneActivity::class.java)

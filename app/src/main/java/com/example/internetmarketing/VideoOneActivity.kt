@@ -42,6 +42,85 @@ class VideoOneActivity : YouTubeBaseActivity() {
         )
 
 
+        if (id == "one") {
+/*                    val VIDEO_ID = "f0cdG0IVFM"
+                    p1?.loadVideo(VIDEO_ID)*/
+
+            val intent = Intent(Intent.ACTION_VIEW)
+
+            intent.data = Uri.parse("https://youtu.be/f0cdG0IVFM8")
+
+            startActivity(intent)
+
+        } else {
+
+            if (id == "two") {
+
+
+                val intent = Intent(Intent.ACTION_VIEW)
+
+                intent.data = Uri.parse("https://youtu.be/MGjpCsn5SmE")
+
+                startActivity(intent)
+
+/*                        val VIDEO_ID = "MGjpCsn5SmE"
+                        p1?.loadVideo(VIDEO_ID)*/
+            } else {
+
+                if (id == "three") {
+
+                    val intent = Intent(Intent.ACTION_VIEW)
+
+                    intent.data = Uri.parse("https://youtu.be/cwnrchkwW2g")
+
+                    startActivity(intent)
+
+/*                            val VIDEO_ID = "cwnrchkwW2g"
+                            p1?.loadVideo(VIDEO_ID)*/
+                } else {
+
+                    if (id == "four") {
+
+                        val intent = Intent(Intent.ACTION_VIEW)
+
+                        intent.data = Uri.parse("https://youtu.be/-6WbYaR70zk")
+
+                        startActivity(intent)
+
+/*                                val VIDEO_ID = "-6WbYaR70zk"
+                                p1?.loadVideo(VIDEO_ID)*/
+                    } else {
+
+
+                        if (id == "five") {
+
+                            val intent = Intent(Intent.ACTION_VIEW)
+
+                            intent.data = Uri.parse("https://youtu.be/e-TCK_Q7Z2M")
+
+                            startActivity(intent)
+
+/*                                    val VIDEO_ID = "e-TCK_Q7Z2M"
+                                    p1?.loadVideo(VIDEO_ID)*/
+                        }else{
+                            if (id == "main"){
+
+                                val intent = Intent(Intent.ACTION_VIEW)
+
+                                intent.data = Uri.parse("https://youtube.com/playlist?list=PLFRnhpV9odGBf6YGOdR0Rkpw2zhWdg7Hq")
+
+                                startActivity(intent)
+
+                            }
+                        }
+
+                    }
+
+                }
+
+            }
+
+        }
 
 
         youtubePlayerInit = object : YouTubePlayer.OnInitializedListener {
@@ -51,75 +130,6 @@ class VideoOneActivity : YouTubeBaseActivity() {
                 p2: Boolean
             ) {
 
-                if (id == "one") {
-/*                    val VIDEO_ID = "f0cdG0IVFM"
-                    p1?.loadVideo(VIDEO_ID)*/
-
-                    val intent = Intent(Intent.ACTION_VIEW)
-
-                    intent.data = Uri.parse("https://youtu.be/f0cdG0IVFM8")
-
-                    startActivity(intent)
-
-                } else {
-
-                    if (id == "two") {
-
-
-                        val intent = Intent(Intent.ACTION_VIEW)
-
-                        intent.data = Uri.parse("https://youtu.be/MGjpCsn5SmE")
-
-                        startActivity(intent)
-
-/*                        val VIDEO_ID = "MGjpCsn5SmE"
-                        p1?.loadVideo(VIDEO_ID)*/
-                    } else {
-
-                        if (id == "three") {
-
-                            val intent = Intent(Intent.ACTION_VIEW)
-
-                            intent.data = Uri.parse("https://youtu.be/cwnrchkwW2g")
-
-                            startActivity(intent)
-
-/*                            val VIDEO_ID = "cwnrchkwW2g"
-                            p1?.loadVideo(VIDEO_ID)*/
-                        } else {
-
-                            if (id == "four") {
-
-                                val intent = Intent(Intent.ACTION_VIEW)
-
-                                intent.data = Uri.parse("https://youtu.be/-6WbYaR70zk")
-
-                                startActivity(intent)
-
-/*                                val VIDEO_ID = "-6WbYaR70zk"
-                                p1?.loadVideo(VIDEO_ID)*/
-                            } else {
-
-
-                                if (id == "five") {
-
-                                    val intent = Intent(Intent.ACTION_VIEW)
-
-                                    intent.data = Uri.parse("https://youtu.be/e-TCK_Q7Z2M")
-
-                                    startActivity(intent)
-
-/*                                    val VIDEO_ID = "e-TCK_Q7Z2M"
-                                    p1?.loadVideo(VIDEO_ID)*/
-                                }
-
-                            }
-
-                        }
-
-                    }
-
-                }
 
             }
 
