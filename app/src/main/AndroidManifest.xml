@@ -15,6 +15,9 @@
         android:theme="@style/Theme.InternetMarketing"
         tools:targetApi="31">
         <activity
+            android:name=".AdabiyotlarActivity"
+            android:exported="false" />
+        <activity
             android:name=".HomeActivityFour"
             android:exported="false">
             <meta-data

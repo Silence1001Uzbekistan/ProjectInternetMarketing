@@ -3,6 +3,7 @@ package com.example.internetmarketing
 import android.app.AlertDialog
 import android.content.DialogInterface
 import android.content.Intent
+import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Menu
@@ -73,9 +74,9 @@ class YouTubeActivity : AppCompatActivity() {
 
         binding.youMain.setOnClickListener {
 
-            val intent = Intent(this, VideoOneActivity::class.java)
+            val intent = Intent(Intent.ACTION_VIEW)
 
-            intent.putExtra("video","main")
+            intent.data = Uri.parse("https://youtube.com/playlist?list=PLFRnhpV9odGBf6YGOdR0Rkpw2zhWdg7Hq")
 
             startActivity(intent)
 
@@ -83,9 +84,9 @@ class YouTubeActivity : AppCompatActivity() {
 
         binding.youOne.setOnClickListener {
 
-            val intent = Intent(this, VideoOneActivity::class.java)
+            val intent = Intent(Intent.ACTION_VIEW)
 
-            intent.putExtra("video","one")
+            intent.data = Uri.parse("https://youtu.be/f0cdG0IVFM8")
 
             startActivity(intent)
 
@@ -94,9 +95,9 @@ class YouTubeActivity : AppCompatActivity() {
 
         binding.youTwo.setOnClickListener {
 
-            val intent = Intent(this, VideoOneActivity::class.java)
+            val intent = Intent(Intent.ACTION_VIEW)
 
-            intent.putExtra("video","two")
+            intent.data = Uri.parse("https://youtu.be/MGjpCsn5SmE")
 
             startActivity(intent)
 
@@ -104,9 +105,9 @@ class YouTubeActivity : AppCompatActivity() {
 
         binding.youThree.setOnClickListener {
 
-            val intent = Intent(this, VideoOneActivity::class.java)
+            val intent = Intent(Intent.ACTION_VIEW)
 
-            intent.putExtra("video","three")
+            intent.data = Uri.parse("https://youtu.be/cwnrchkwW2g")
 
             startActivity(intent)
 
@@ -114,9 +115,9 @@ class YouTubeActivity : AppCompatActivity() {
 
         binding.youFour.setOnClickListener {
 
-            val intent = Intent(this, VideoOneActivity::class.java)
+            val intent = Intent(Intent.ACTION_VIEW)
 
-            intent.putExtra("video","four")
+            intent.data = Uri.parse("https://youtu.be/-6WbYaR70zk")
 
             startActivity(intent)
 
@@ -124,9 +125,9 @@ class YouTubeActivity : AppCompatActivity() {
 
         binding.youFive.setOnClickListener {
 
-            val intent = Intent(this, VideoOneActivity::class.java)
+            val intent = Intent(Intent.ACTION_VIEW)
 
-            intent.putExtra("video","five")
+            intent.data = Uri.parse("https://youtu.be/e-TCK_Q7Z2M")
 
             startActivity(intent)
 

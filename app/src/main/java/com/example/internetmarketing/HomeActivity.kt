@@ -3,15 +3,15 @@ package com.example.internetmarketing
 import android.app.AlertDialog
 import android.content.DialogInterface
 import android.content.Intent
+import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.Menu
-import android.view.MenuInflater
-import android.view.MenuItem
+import android.view.*
 import android.widget.Toast
 import androidx.appcompat.app.ActionBar
 import com.example.internetmarketing.databinding.ActivityHomeBinding
 import com.example.internetmarketing.databinding.ActivityMainBinding.inflate
+import com.example.internetmarketing.databinding.DialogKeyBinding
 import com.google.android.material.snackbar.Snackbar
 import kotlin.system.exitProcess
 
@@ -25,6 +25,9 @@ class HomeActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityHomeBinding.inflate(layoutInflater, null, false)
         setContentView(binding.root)
+
+        //popup menu button id
+        registerForContextMenu(binding.keyNext)
 
         supportActionBar!!.displayOptions = ActionBar.DISPLAY_SHOW_CUSTOM
 
@@ -54,6 +57,12 @@ class HomeActivity : AppCompatActivity() {
         binding.buttonFour.setOnClickListener {
 
             startActivity(Intent(this, HomeActivityFour::class.java))
+
+        }
+
+        binding.bookNext.setOnClickListener {
+
+            startActivity(Intent(this, AdabiyotlarActivity::class.java))
 
         }
 
@@ -111,6 +120,74 @@ class HomeActivity : AppCompatActivity() {
         return super.onCreateOptionsMenu(menu)
     }
 
+    override fun onCreateContextMenu(
+        menu: ContextMenu?,
+        v: View?,
+        menuInfo: ContextMenu.ContextMenuInfo?
+    ) {
+        super.onCreateContextMenu(menu, v, menuInfo)
+        menuInflater.inflate(R.menu.pop_up_menu, menu)
+    }
+
+    override fun onContextItemSelected(item: MenuItem): Boolean {
+
+        when (item.itemId) {
+
+            R.id.item1 -> {
+
+                val intent = Intent(Intent.ACTION_VIEW)
+
+                intent.data = Uri.parse("https://uz.wikipedia.org/wiki/Internet")
+
+                startActivity(intent)
+
+            }
+
+            R.id.item2 -> {
+
+                val intent = Intent(Intent.ACTION_VIEW)
+
+                intent.data = Uri.parse("https://uz.wikipedia.org/wiki/Facebook")
+
+                startActivity(intent)
+
+            }
+
+            R.id.item3 -> {
+
+                val intent = Intent(Intent.ACTION_VIEW)
+
+                intent.data = Uri.parse("https://uz.wikipedia.org/wiki/Ijtimoiy_tarmoq")
+
+                startActivity(intent)
+
+            }
+
+            R.id.item4 -> {
+
+                val intent = Intent(Intent.ACTION_VIEW)
+
+                intent.data = Uri.parse("https://uz.wikipedia.org/wiki/Marketing")
+
+                startActivity(intent)
+
+            }
+
+            R.id.item5 -> {
+
+                val intent = Intent(Intent.ACTION_VIEW)
+
+                intent.data = Uri.parse("https://uz.wikipedia.org/wiki/Dasturlash")
+
+                startActivity(intent)
+
+            }
+
+        }
+
+        return super.onContextItemSelected(item)
+    }
+
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
 
         val id = item.itemId
@@ -125,13 +202,13 @@ class HomeActivity : AppCompatActivity() {
                 builder.setTitle("Dasturni yopish")
                 builder.setMessage("Dasturdan chiqishni xohlaysizmi ?")
                 builder.setCancelable(false)
-                builder.setPositiveButton("Ha",object : DialogInterface.OnClickListener{
+                builder.setPositiveButton("Ha", object : DialogInterface.OnClickListener {
                     override fun onClick(p0: DialogInterface?, p1: Int) {
                         finish()
                         exitProcess(0)
                     }
                 })
-                builder.setNegativeButton("Yo'q",object : DialogInterface.OnClickListener{
+                builder.setNegativeButton("Yo'q", object : DialogInterface.OnClickListener {
                     override fun onClick(p0: DialogInterface?, p1: Int) {
 
 

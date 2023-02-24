@@ -27,7 +27,7 @@ class MainActivity : AppCompatActivity() {
         Handler().postDelayed({
             startActivity(Intent(this, HomeActivity::class.java))
             finish()
-        }, 2500)
+        }, 2000)
 
 
         binding.textM.animation = AnimationUtils.loadAnimation(this,R.anim.anim_one)
