@@ -7,6 +7,8 @@ import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.*
+import android.widget.AdapterView
+import android.widget.ArrayAdapter
 import android.widget.Toast
 import androidx.appcompat.app.ActionBar
 import com.example.internetmarketing.databinding.ActivityHomeBinding
@@ -27,7 +29,7 @@ class HomeActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         //popup menu button id
-        registerForContextMenu(binding.keyNext)
+        //registerForContextMenu(binding.keyNext)
 
         supportActionBar!!.displayOptions = ActionBar.DISPLAY_SHOW_CUSTOM
 
@@ -105,6 +107,86 @@ class HomeActivity : AppCompatActivity() {
 
 
             false
+        }
+
+        val arrayAdapter =
+            ArrayAdapter.createFromResource(this, R.array.keys, R.layout.color_spinner_layout)
+
+        arrayAdapter.setDropDownViewResource(R.layout.spinner_drop_down_layout)
+
+        binding.keySpinner.adapter = arrayAdapter
+
+        //spinnerda tanlangani bo'yicha ishlash mumkin
+        binding.keySpinner.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
+            override fun onItemSelected(p0: AdapterView<*>?, p1: View?, p2: Int, p3: Long) {
+
+
+                //report.productLength = p0!!.getItemAtPosition(p2).toString()
+
+                if (p0!!.getItemAtPosition(p2).toString() == "Internet bu nima ?") {
+                    val intent = Intent(Intent.ACTION_VIEW)
+
+                    intent.data = Uri.parse("https://uz.wikipedia.org/wiki/Internet")
+
+                    startActivity(intent)
+                } else {
+                    if (p0!!.getItemAtPosition(p2).toString() == "Facebook haqida tushuncha") {
+
+                        val intent = Intent(Intent.ACTION_VIEW)
+
+                        intent.data = Uri.parse("https://uz.wikipedia.org/wiki/Facebook")
+
+                        startActivity(intent)
+
+                    } else {
+                        if (p0!!.getItemAtPosition(p2)
+                                .toString() == "Ijtimoiy tarmoq deganda nima tushuniladi ?"
+                        ) {
+
+                            val intent = Intent(Intent.ACTION_VIEW)
+
+                            intent.data = Uri.parse("https://uz.wikipedia.org/wiki/Ijtimoiy_tarmoq")
+
+                            startActivity(intent)
+
+                        } else {
+                            if (p0!!.getItemAtPosition(p2)
+                                    .toString() == "Marketing haqida tushuncha"
+                            ) {
+
+                                val intent = Intent(Intent.ACTION_VIEW)
+
+                                intent.data = Uri.parse("https://uz.wikipedia.org/wiki/Marketing")
+
+                                startActivity(intent)
+
+                            } else {
+
+                                if (p0!!.getItemAtPosition(p2)
+                                        .toString() == "Dasturlash nima degani ?"
+                                ) {
+
+                                    val intent = Intent(Intent.ACTION_VIEW)
+
+                                    intent.data = Uri.parse("https://uz.wikipedia.org/wiki/Dasturlash")
+
+                                    startActivity(intent)
+
+                                }
+
+
+                            }
+                        }
+                    }
+                }
+
+            }
+
+            override fun onNothingSelected(p0: AdapterView<*>?) {
+
+
+            }
+
         }
 
     }

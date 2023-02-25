@@ -83,25 +83,23 @@
                         android:textAllCaps="false"
                         android:textColor="#FFFFFF" />
 
-                    <LinearLayout
+                    <Spinner
+                        android:id="@+id/key_spinner"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+
+                    <ImageView
+                        android:id="@+id/book_next"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:orientation="horizontal">
+                        android:src="@drawable/menu_book" />
 
-                        <ImageView
-                            android:id="@+id/book_next"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginRight="20dp"
-                            android:src="@drawable/menu_book" />
-
-                        <ImageView
-                            android:id="@+id/key_next"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:src="@drawable/vpn_key" />
-
-                    </LinearLayout>
+                    <!--                        <ImageView
+                                                android:id="@+id/key_next"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:src="@drawable/vpn_key" />-->
 
 
                 </LinearLayout>

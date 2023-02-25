@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="keys">
+        <item>-----------------</item>
+        <item>Internet bu nima ?</item>
+        <item>Facebook haqida tushuncha</item>
+        <item>Ijtimoiy tarmoq deganda nima tushuniladi ?</item>
+        <item>Marketing haqida tushuncha</item>
+        <item>Dasturlash nima degani ?</item>
+    </string-array>
+
+</resources>

@@ -20,4 +20,8 @@
     <color name="main_quiz_color">#3F51B5</color>
     <color name="carrotColor">#FB8C00</color>
 
+    <color name="dark_grey">#0D1623</color>
+    <color name="greyOne">#1C2D4A</color>
+    <color name="greyTwo">#686868</color>
+
 </resources>
