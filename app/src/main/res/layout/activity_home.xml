@@ -28,6 +28,7 @@
                 android:id="@+id/buttonConst"
                 android:layout_width="0dp"
                 android:layout_height="0dp"
+                android:padding="5dp"
                 app:layout_constraintBottom_toTopOf="@id/bottomNavigationView"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
@@ -42,58 +43,97 @@
                     tools:layout_editor_absoluteX="76dp"
                     tools:layout_editor_absoluteY="0dp">
 
-
-                    <Button
-                        android:id="@+id/buttonOne"
-                        android:layout_width="300dp"
-                        android:layout_height="60dp"
-                        android:layout_margin="20sp"
-                        android:background="@drawable/homebuttonback"
-                        android:text="Marketing tarixi "
-                        android:textAllCaps="false"
-                        android:textColor="#FFFFFF" />
-
-                    <Button
-                        android:id="@+id/buttonTwo"
-                        android:layout_width="300dp"
-                        android:layout_height="60dp"
-                        android:layout_margin="20sp"
-                        android:background="@drawable/homebuttonback"
-                        android:text="Internet marketing nima ?"
-                        android:textAllCaps="false"
-                        android:textColor="#FFFFFF" />
-
-                    <Button
-                        android:id="@+id/buttonThree"
-                        android:layout_width="300dp"
-                        android:layout_height="60dp"
-                        android:layout_margin="20sp"
-                        android:background="@drawable/homebuttonback"
-                        android:text="Internet marketing afzaliklari"
-                        android:textAllCaps="false"
-                        android:textColor="#FFFFFF" />
-
-                    <Button
-                        android:id="@+id/buttonFour"
-                        android:layout_width="300dp"
-                        android:layout_height="60dp"
-                        android:layout_margin="20sp"
-                        android:background="@drawable/homebuttonback"
-                        android:text="Ijtimoiy tarmoqlardagi marketing..."
-                        android:textAllCaps="false"
-                        android:textColor="#FFFFFF" />
-
                     <Spinner
                         android:id="@+id/key_spinner"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content" />
-
-
-                    <ImageView
-                        android:id="@+id/book_next"
-                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:src="@drawable/menu_book" />
+                        android:layout_marginBottom="15sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+
+                        <Button
+                            android:id="@+id/buttonOne"
+                            android:layout_margin="2dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="60dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/homebuttonback"
+                            android:maxLines="1"
+                            android:padding="5dp"
+                            android:text="Marketing tarixi "
+                            android:textAllCaps="false"
+                            android:textColor="#FFFFFF"
+                            android:textSize="10sp" />
+
+                        <Button
+                            android:id="@+id/buttonTwo"
+                            android:layout_width="match_parent"
+                            android:layout_height="60dp"
+                            android:layout_weight="1"
+                            android:layout_margin="2dp"
+                            android:background="@drawable/homebuttonback"
+                            android:maxLines="1"
+                            android:padding="5dp"
+                            android:text="Internet marketing nima ?"
+                            android:textAllCaps="false"
+                            android:textColor="#FFFFFF"
+                            android:textSize="10sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+
+                        <Button
+                            android:id="@+id/buttonThree"
+                            android:layout_width="match_parent"
+                            android:layout_height="60dp"
+                            android:layout_margin="2dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/homebuttonback"
+                            android:maxLines="1"
+                            android:padding="5dp"
+                            android:text="Internet marketing afzaliklari"
+                            android:textAllCaps="false"
+                            android:textColor="#FFFFFF"
+                            android:textSize="10sp" />
+
+                        <Button
+                            android:id="@+id/buttonFour"
+                            android:layout_width="match_parent"
+                            android:layout_height="60dp"
+                            android:layout_weight="1"
+                            android:layout_margin="2dp"
+                            android:background="@drawable/homebuttonback"
+                            android:maxLines="1"
+                            android:padding="5dp"
+                            android:text="Ijtimoiy tarmoqlardagi marketing..."
+                            android:textAllCaps="false"
+                            android:textColor="#FFFFFF"
+                            android:textSize="10sp" />
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/book_next"
+                        android:layout_width="200dp"
+                        android:layout_height="60dp"
+                        android:layout_margin="20sp"
+                        android:background="@drawable/homebuttonback"
+                        android:padding="5dp"
+                        android:text="Foydali adabiyotlar"
+                        android:textAllCaps="false"
+                        android:textColor="#FFFFFF"
+                        android:textSize="10sp" />
+
 
                     <!--                        <ImageView
                                                 android:id="@+id/key_next"
