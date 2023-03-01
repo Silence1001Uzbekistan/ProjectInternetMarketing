@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -18,13 +18,11 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
-
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="vertical"
                 android:padding="10dp">
-
 
                 <TextView
                     android:id="@+id/key_internet"
@@ -32,47 +30,44 @@
                     android:layout_height="wrap_content"
                     android:layout_margin="5dp"
                     android:text="Internet nima ?"
-                    android:textColor="#2196F3"/>
+                    android:textColor="#2196F3" />
 
                 <TextView
                     android:id="@+id/key_facebook"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="5dp"
-                    android:textColor="#2196F3"
-                    android:text="Facebook haqida umumiy tushuncha" />
+                    android:text="Facebook haqida umumiy tushuncha"
+                    android:textColor="#2196F3" />
 
                 <TextView
                     android:id="@+id/key_social_media"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="5dp"
-                    android:textColor="#2196F3"
-                    android:text="Ijtimoiy tarmoqlarga nimalar kiradi" />
+                    android:text="Ijtimoiy tarmoqlarga nimalar kiradi"
+                    android:textColor="#2196F3" />
 
                 <TextView
                     android:id="@+id/key_marketing"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="5dp"
-                    android:textColor="#2196F3"
-                    android:text="Marketing haqida tushuncha" />
+                    android:text="Marketing haqida tushuncha"
+                    android:textColor="#2196F3" />
 
                 <TextView
                     android:id="@+id/key_programmer"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="5dp"
-                    android:textColor="#2196F3"
-                    android:text="Dasturlash haqida tushuncha" />
-
+                    android:text="Dasturlash haqida tushuncha"
+                    android:textColor="#2196F3" />
 
             </LinearLayout>
 
         </ScrollView>
 
-
     </LinearLayout>
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>

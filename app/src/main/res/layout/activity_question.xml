@@ -1,32 +1,33 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white"
+    android:background="#F30D1623"
     tools:context=".QuestionActivity">
-
 
     <Button
         android:id="@+id/nextBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:backgroundTint="#FB8C00"
+        android:padding="30dp"
         android:text="Testni boshlang"
+        android:textAllCaps="true"
         android:textColor="#FFFFFF"
-        android:padding="10dp"
-        android:textAllCaps="false"
-        app:layout_constraintVertical_bias="0.3"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.3" />
+
+
+    -
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
-
 
         <com.airbnb.lottie.LottieAnimationView
             android:id="@+id/lavOne"
@@ -35,6 +36,9 @@
             app:lottie_autoPlay="true"
             app:lottie_loop="true"
             app:lottie_rawRes="@raw/question" />
+
+
+        -
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
@@ -52,11 +56,8 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:menu="@menu/bottom_menu" />
 
-
         </androidx.constraintlayout.widget.ConstraintLayout>
 
-
     </RelativeLayout>
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>
